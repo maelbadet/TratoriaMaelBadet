@@ -55,22 +55,25 @@ header{
 
 /* Bouton en forme de four a pizza */
 .find {
-    border: solid black 5px;
     background-color: darkred;
     color: white;
-    border-radius: 50% 50% 0 0;
-    padding: 1rem 5rem;
+    padding: 2rem 20rem;
     font-weight: bold;
     font-size: 2rem;
     margin-top: 2rem;
+    border-radius: 50px; /* Ajustez cette valeur pour obtenir la forme souhaitée */
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Effet de survol */
 .find:hover {
     background-color: white;
     color: green;
 }
 
+.title2-adjusted {
+    margin-left: 15rem; /* Ajustez cette valeur selon vos besoins */
+}
 
 
 /* Mise en forme des différents h2 pour la suite de l'exo */
@@ -227,7 +230,7 @@ footer{
         flex-direction: column;
         align-items: center;
         max-width: 70%;
-        height: 60vh;
+        max-height: 60vh;
         padding-bottom: 1rem;
     }
     .carte{
