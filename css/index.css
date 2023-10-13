@@ -1,0 +1,283 @@
+/* Police du San Pietro  */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+/* Mise en forme des deux titres (San Pietro) */
+.title1{
+    font-family: 'Pacifico', cursive;
+    padding-left: 2rem;
+}
+.title2{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+
+/* Mise en forme du header avec ses liens */
+header{
+    position: sticky;
+    top: 0;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.headerLink{
+    color: white;
+    text-decoration: none;
+    padding-right: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.headerLink:hover{
+    color: rgb(88, 230, 88);
+}
+
+
+/* Mise en forme de la main avec la photo en background, le nom et le bouton */
+.acceuil{
+    background-image: url(../img/pizza-2810589_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bouton en forme de four a pizza */
+.find {
+    border: solid black 5px;
+    background-color: darkred;
+    color: white;
+    border-radius: 50% 50% 0 0;
+    padding: 1rem 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.find:hover {
+    background-color: white;
+    color: green;
+}
+
+
+
+/* Mise en forme des différents h2 pour la suite de l'exo */
+h2{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.green{
+    color: rgb(4, 161, 4);
+    font-weight: bold;
+}
+.plat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+/* Mise en form des images (réduction en taille) */
+img{
+    max-width: 400px;
+}
+
+
+
+/* Mise en forme de la partie carte */
+.carte{
+    font-size: 1.5rem;
+    width: 75%;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.carte:hover{
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+
+
+/* Mise en forme de la partie Services */
+
+.nosServices {
+    background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.serviceElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vh;
+    margin: 2rem;
+}
+
+.serviceBox {
+    background-color: rgb(66, 2, 2);
+    color: white;
+    height: 280px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.serviceImage {
+    width: 100%; /* Pour que toutes les images aient la même largeur relative */
+}
+
+
+
+/* Partie de la page contact */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+.contactLigne{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+.contactLigne div a 
+{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: green;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+.contactLigne div a:hover
+{
+    color: darkred;
+}
+
+
+
+/* Mise en forme du footer pour le pied de page */
+footer{
+    font-family: 'Pacifico', cursive;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+
+
+/* Ajout des media queries pour faire la partie responsive du site */
+@media screen and (max-width: 768px) {
+    /* Styles pour l'en-tête (header) */
+    html{
+        font-size: 0.5rem;
+    }
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Styles pour la carte (notreCarte) */
+    .notreCarte {
+        flex-direction: column;
+        text-align: center;
+    }
+    .notreCarte img{
+        max-width: 70%;
+    }
+    
+    /* Styles pour la section des services (nosServices) */
+    .serviceElement {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+        height: 60vh;
+        padding-bottom: 1rem;
+    }
+    .carte{
+        text-align: center;
+        margin-left: 5rem;
+    }
+
+    /* Styles pour la section "Nous Contacter" (contact) */
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact div iframe{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1445px) {
+    html{
+        font-size: 0.8rem;
+    }
+    /* Styles pour la carte (notreCarte) */
+    .notreCarte {
+        flex-direction: column;
+        text-align: center;
+    }
+    .notreCarte img {
+        max-width: 70%;
+    }
+
+    /* Styles pour la section des services (nosServices) */
+    .serviceElement {
+        flex-direction: column;
+        align-items: center;
+        max-width: 70%;
+        height: 60vh;
+        padding-bottom: 1rem;
+    }
+    .carte {
+        text-align: center;
+        margin-left: 5rem;
+    }
+
+    /* Styles pour la section "Nous Contacter" (contact) */
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact div iframe {
+        width: 300px;
+        height: 300px;
+    }
+}
